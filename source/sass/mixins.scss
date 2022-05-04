@@ -1,0 +1,22 @@
+@mixin main-nav-link() {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+@mixin section-title() {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@mixin main-desc() {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}

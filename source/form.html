@@ -46,18 +46,21 @@
         <legend class="visually-hidden">Данные вашего кота</legend>
         <ul class="user-form__inputs">
           <li class="user-form__inputs-item">
-            <label class="user-form__inputs-label form-label" for="name">Имя:<sup>*</sup></label>
-            <input class="user-form__direct-input form-input" type="text" id="name" name="name" placeholder="Барсик"
+            <label class="user-form__inputs-label">Имя:<sup>*</sup>
+              <input class="user-form__text-input" type="text" name="name" placeholder="Барсик"
               required>
+            </label>
           </li>
           <li class="user-form__inputs-item">
-            <label class="user-form__inputs-label form-label" for="weight">Вес (кг):<sup>*</sup></label>
-            <input class="user-form__direct-input form-input" type="text" id="weight" name="weight" placeholder="7"
+            <label class="user-form__inputs-label form-label">Вес (кг):<sup>*</sup>
+              <input class="user-form__text-input form-input" type="text" name="weight" placeholder="7"
               required>
+            </label>
           </li>
           <li class="user-form__inputs-item">
-            <label class="user-form__inputs-label form-label" for="age">Возраст (лет):</label>
-            <input class="user-form__direct-input form-input" type="text" id="age" name="age" placeholder="7">
+            <label class="user-form__inputs-label form-label">Возраст (лет):
+              <input class="user-form__text-input form-input" type="text" name="age" placeholder="7">
+            </label>
           </li>
         </ul>
       </fieldset>
@@ -81,8 +84,7 @@
       </fieldset>
 
       <fieldset class="user-form__fieldset user-form__contacts">
-        <legend class="user-form__heading inner-heading>Контактные данные
-          (владельца кота)</legend>
+        <legend class="user-form__heading inner-heading">Контактные данные (владельца кота)</legend>
         <ul class="user-form__contacts">
           <li class="user-form__contacts-item">
             <label class="user-form__contacts-label form-label" for="email">

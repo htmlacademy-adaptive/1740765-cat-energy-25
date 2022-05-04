@@ -4,19 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин Кэт энерджи</title>
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
+      <div class="main-navigation__first-row">
       <a class="main-navigation__logo">
-        <img class="main-navigation__logo-image" src="/source/img/main-logo.svg" width="191" height="38"
+        <img class="main-navigation__logo-image" src="/img/main-logo.svg" width="191" height="38"
           alt="Лого Кэт энерджи">
       </a>
       <button class="main-navigation__toggle burger-menu" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
-      <ul class="main-navigation__list">
+          меню</span>
+          <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+          </svg>
+      </button>
+      </div>
+      <ul class="main-navigation__list visually-hidden">
         <li class="main-navigation__item">
           <a class="main-navigation__link" href="#">
             Главная
@@ -51,8 +59,8 @@
       <h2 class="visually-hidden">Виды кормов</h2>
       <ul class="product-type__list">
         <li class="product-type__item">
-          <article class="product-card">
-            <h3 class="product-type__title>">
+          <article class="product-type__card fit-card">
+            <h3 class="product-type__title">
               Похудение
             </h3>
             <p class="product-type__desc main-desc">
@@ -66,8 +74,8 @@
         </li>
 
         <li class="product-type__item">
-          <article class="product-card">
-            <h3 class="product-type__title>">
+          <article class="product-type__card gain-card">
+            <h3 class="product-type__title">
               Набор массы
             </h3>
             <p class="product-type__desc main-desc">
@@ -118,9 +126,9 @@
         <span class="slider-title">
           Затраты на питание: 15 000 РУБ.
         </span>
-        <img class="cat-before>" src="/source/img/chonky-cat.jpg" width="280" height="232"
+        <img class="cat-before>" src="/img/chonky-cat.jpg" width="280" height="232"
           alt="Кот до перехода на корм Cat Energy Slim">
-        <img class="cat-after visually-hidden>" src="/source/img/skinny-cat.jpg" width="243" height="232"
+        <img class="cat-after visually-hidden>" src="/img/skinny-cat.jpg" width="243" height="232"
           alt="Кот после перехода на корм Cat Energy Slim">
         <button class="slider__button" type="button">
           <span class="slider__button-text">Было</span>
@@ -150,7 +158,7 @@
       </section>
 
       <a class="page-footer__logo">
-        <img class="footer-logo" src="/source/img/footer-logo.svg" alt="Лого Кэт энерджи" width="128" height="24">
+        <img class="footer-logo" src="/img/footer-logo.svg" alt="Лого Кэт энерджи" width="128" height="24">
       </a>
 
       <h3 class="visually-hidden">Ссылки на соцсети</h3>

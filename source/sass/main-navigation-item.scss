@@ -1,0 +1,15 @@
+.main-navigation__item {
+  display: flex;
+  min-height: 65px;
+  border-bottom: 1px solid $color-grey-115;
+  box-sizing: content-box;
+}
+
+.main-navigation__link {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  @include main-nav-link();
+}

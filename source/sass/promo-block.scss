@@ -1,0 +1,32 @@
+.promo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+  background-image: url("/img/promo-block-food.png"), url("/img/promo-block-bg.png");
+  background-position: center 167px, top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.promo-block__title {
+  @include section-title();
+  color: $color-white;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.promo-block__desc {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-top: 25px;
+  margin-bottom: 29px;
+}
+
+.promo-block__button {
+  margin-top: auto;
+}
+
