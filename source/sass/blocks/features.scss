@@ -1,0 +1,49 @@
+.features {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.features__title {
+  @include main-title();
+}
+
+.features__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 49px;
+  padding: 0;
+}
+
+.features__list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  max-width: 200px;
+  padding-left: 80px;
+  color: $color-grey-300;
+  @include main-desc();
+}
+
+.features__list-item_healthy {
+  background-image: url(../../img/feature-healthy.svg);
+  background-repeat: no-repeat;
+}
+
+.features__list-item_convenient {
+  background-image: url(../../img/feature-convenient.svg);
+  background-repeat: no-repeat;
+}
+
+.features__list-item_nourishing {
+  background-image: url(../../img/feature-nourishing.svg);
+  background-repeat: no-repeat;
+}
+
+.features__list-item_efficient {
+  background-image: url(../../img/feature-efficient.svg);
+  background-repeat: no-repeat;
+}

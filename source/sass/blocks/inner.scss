@@ -1,0 +1,20 @@
+.inner__title {
+  @include section-title();
+  padding-left: 20px;
+  margin-top: 27px;
+}
+
+.inner__desc {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-top: 37px;
+  margin-bottom: 39px;
+  padding-left: 20px;
+}
+
+.inner__heading {
+  padding: 0;
+  @include form-heading();
+}

@@ -1,10 +1,10 @@
-.product-type__card {
+.product-type-card {
   background-color: $color-grey-50;
   width: 280px;
   height: 266px;
 }
 
-.product-type__title {
+.product-type-card__title {
   font-family: "Oswald";
   font-size: 24px;
   line-height: 37px;
@@ -15,19 +15,19 @@
   padding-top: 30px;
 }
 
-.fit-card {
+.product-type-card_fit {
   background-image: url(/img/product-type-lose-weight.svg);
   background-repeat: no-repeat;
   background-position: 22px 21px;
 }
 
-.gain-card {
+.product-type-card_gain {
   background-image: url(/img/product-type-gain-weight.svg);
   background-repeat: no-repeat;
   background-position: 13px 24px;
 }
 
-.product-type__desc {
+.product-type-card__desc {
   @include main-desc();
   width: 227px;
   padding-left: 20px;
@@ -36,7 +36,7 @@
   color: $color-grey-300;
 }
 
-.product-type__link {
+.product-type-card__link {
   display: flex;
   width: 240px;
   height: 57px;

@@ -1,0 +1,43 @@
+.additional-goods {
+  padding-left: 20px;
+  margin-top: 25px;
+  overflow-x: hidden;
+}
+
+.additional-goods__heading {
+  line-height: 26px;
+  font-weight: 400;
+  background: $color-white;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding-right: 22px;
+}
+
+.additional-goods__heading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: 3px;
+  width: 100vw;
+  height: 2px;
+  background: #68b738;
+  z-index: -1;
+}
+
+.additional-goods__list {
+  list-style: none;
+  padding: 0;
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+.additional-goods__list-item {
+  width: 280px;
+  border-top: 1px solid $color-grey-100;
+  border-bottom: 1px solid $color-grey-100;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 17px;
+}

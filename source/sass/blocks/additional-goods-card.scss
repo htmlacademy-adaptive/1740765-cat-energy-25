@@ -1,0 +1,24 @@
+.additional-goods-card__title {
+  @include catalog-regular-text();
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.additional-goods-card__characteristics {
+  display: flex;
+  flex-direction: row;
+}
+
+.additional-goods-card__characteristics {
+  font-family: "Arial";
+  margin-top: 9px;
+}
+
+.additional-goods-card__characteristics-value {
+  margin-left: auto;
+}
+
+.additional-goods-card__button {
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,6 @@
+.user-form-label {
+  @include form-regular-text();
+  display: flex;
+  align-items: center;
+  margin-right: auto
+}
