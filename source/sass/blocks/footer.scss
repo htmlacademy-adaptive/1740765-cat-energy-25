@@ -1,0 +1,37 @@
+.footer {
+  background-color: $color-grey-50;
+  display: flex;
+  flex-direction: column;
+  height: 710px;
+}
+
+.footer__logo-image {
+  display: flex;
+  height: 24px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  height: 236px;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.footer-made-by {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  height: 78px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-made-by__link {
+  text-decoration: none;
+}
+
+.footer-made-by__text {
+  font-size: 16px;
+  color: $color-grey-400;
+}

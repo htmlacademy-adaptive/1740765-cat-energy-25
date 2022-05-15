@@ -1,0 +1,78 @@
+@mixin header-nav-link() {
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-black;
+}
+
+@mixin section-title() {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@mixin main-desc() {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin main-title() {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  color: $color-black;
+}
+
+@mixin form-regular-text() {
+  font-family: "Oswald";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $color-grey-300;
+}
+
+@mixin form-heading() {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-black;
+}
+
+@mixin catalog-regular-text() {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin heading-with-line() {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-black;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding-right: 22px;
+  background-color: $color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: 1px;
+    width: 100vw;
+    height: 2px;
+    background: #68b738;
+    z-index: -1;
+  }
+}

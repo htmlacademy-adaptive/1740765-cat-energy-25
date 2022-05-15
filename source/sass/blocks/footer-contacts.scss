@@ -1,0 +1,43 @@
+.footer-contacts {
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts__text {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  height: 112px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.footer-contacts__slogan {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-grey-400;
+  width: 139px;
+}
+
+.footer-contacts__address {
+  color: $color-grey-300;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  width: 139px;
+}
+
+.footer-contacts__map {
+  width: 320px;
+  height: 362px;
+  background-image: url(../../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.footer-contacts_inner {
+  background-color: $color-grey-50;
+}
+

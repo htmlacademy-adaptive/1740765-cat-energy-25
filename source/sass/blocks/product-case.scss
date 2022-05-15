@@ -1,0 +1,17 @@
+.product-case {
+  background: $color-grey-75;
+  min-height: 700px;
+}
+
+.product-case__title {
+  @include main-title();
+  padding: 25px 20px 0;
+}
+
+.product-case__desc {
+  @include main-desc();
+  color: $color-grey-250;
+  padding-left: 20px;
+  width: 280px;
+  margin: 40px 0 20px;
+}

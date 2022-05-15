@@ -1,0 +1,43 @@
+.slider__title {
+  font-family: "Oswald";
+  font-size: 14px;
+  font-weight: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.slider__image-before {
+  padding-left: 20px;
+}
+
+.slider__button {
+  background: transparent;
+  border: none;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.slider__range {
+  -webkit-appearance: none;
+  border-radius: 8px;
+  border: 1px solid $color-grey-200;
+  box-sizing: border-box;
+  width: 86px;
+  height: 14px;
+  margin: 0;
+}
+
+.slider__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  align-items: center;
+  width: 210px;
+  margin: 15px auto 40px;
+}
