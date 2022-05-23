@@ -401,3 +401,96 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-form__parameters {
+    margin-left: 110px;
+  }
+
+  .user-form__inputs {
+    margin-bottom: 69px;
+  }
+
+  .user-form__inputs-item {
+    width: 569px;
+  }
+
+  .user-form {
+    min-width: 1440px;
+  }
+
+  .user-form__programs {
+    position: absolute;
+    top: 429px;
+    left: 760px;
+    margin-left: 0;
+    width: 568px;
+  }
+
+  .user-form__contact-info {
+    margin-top: 0;
+    width: 1440px;
+  }
+
+  .user-form__heading {
+    @include heading-with-line-desktop();
+    margin-left: 110px;
+  }
+
+  .user-form__contacts {
+    flex-direction: row;
+    width: 1220px;
+    column-gap: 38px;
+  }
+
+  .user-form__contacts-item {
+    min-width: 569px;
+    margin-left: 40px;
+  }
+
+  .user-form__contacts-input_email {
+    background-position-x: 449px;
+  }
+
+  .user-form__contacts-input_phone {
+    background-position-x: 436px;
+  }
+
+  .user-form__commentaries {
+    margin-top: 69px;
+  }
+
+  .user-form__commentary-heading {
+    margin-left: 40px;
+  }
+
+  .user-form__textarea {
+    margin-left: 40px;
+    width: 1220px;
+  }
+
+  .user-form__options {
+    margin-left: 0;
+  }
+
+  .user-form__checkbox-list {
+    margin-left: 110px;
+    column-gap: 104px;
+    min-width: 1220px;
+    margin-bottom: 63px;
+  }
+
+  .user-form__button {
+    margin-left: 110px;
+    min-width: 568px;
+    min-height: 52px;
+  }
+
+  .user-form__footnote {
+    margin-left: 81px;
+  }
+
+  .user-form__wrapper {
+    margin-bottom: 82px;
+  }
+}

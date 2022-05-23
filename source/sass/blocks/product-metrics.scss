@@ -68,3 +68,16 @@
     background-color: $color-white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-metrics {
+    margin-top: 69px;
+    margin-left: 0;
+    padding-left: 110px;
+  }
+
+  .product-metrics__item-desc {
+    margin-top: 12px;
+    background-color: $color-grey-50;
+  }
+}

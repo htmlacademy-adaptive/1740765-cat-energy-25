@@ -46,3 +46,9 @@
     width: 132px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer-socials {
+    margin-left: 413px;
+  }
+}

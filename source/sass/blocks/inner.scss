@@ -51,5 +51,22 @@
   .inner__title-catalog {
     padding-left: 30px;
   }
-
 }
+
+@media (min-width: $tablet-width) {
+  .inner__title {
+    margin-top: 74px;
+    padding-left: 110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner__desc {
+    padding-left: 110px;
+  }
+
+  .inner__heading {
+    @include heading-with-line-desktop();
+  }
+}
+

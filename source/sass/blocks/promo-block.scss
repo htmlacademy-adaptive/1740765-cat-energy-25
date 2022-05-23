@@ -1,11 +1,18 @@
 .promo-block {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   min-height: 480px;
-  background-image: url("/img/promo-block-food.png"), url("/img/promo-block-bg.png");
-  background-position: center 167px, top;
+  background-image: url("/img/promo-block-bg.png");
+  background-position: top;
   background-repeat: no-repeat, no-repeat;
+}
+
+.promo-block__image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
 }
 
 .promo-block__title {
@@ -33,12 +40,9 @@
 
 @media (min-width: $tablet-width) {
   .promo-block {
-    background-image: url("/img/promo-block-food-tablet.png");
-    background-position-x: 0;
     margin-top: 62px;
     height: 810px;
-    background-position-y: 201px;
-    background-position-x: 30px;
+    background-image: none
   }
 
   .promo-block__title {
@@ -49,6 +53,11 @@
     margin-left: 117px;
     width: 416px;
     align-self: start;
+  }
+
+  .promo-block__image {
+    top: 201px;
+    left: 29px;
   }
 
   .promo-block__desc {
@@ -68,15 +77,16 @@
     margin-top: 19px;
     align-self: start;
     margin-left: 120px;
+    z-index: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo-block {
     margin-top: 111px;
-    height: 582px;
-    background-image: url("/img/promo-block-food-desktop.png"), url("/img/promo-block-img-desktop.png");
-    background-position: 558px -87px, 720px -225px;
+    max-height: 471px;
+    background-image: none;
+    position: relative;
   }
 
   .promo-block__title {
@@ -90,5 +100,11 @@
 
   .promo-block__button {
     margin-left: 190px;
+  }
+
+  .promo-block__image {
+    position: absolute;
+    left: 558px;
+    top: -84px;
   }
 }

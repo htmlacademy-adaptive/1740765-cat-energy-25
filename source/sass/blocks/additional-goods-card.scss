@@ -21,6 +21,7 @@
 .additional-goods-card__button {
   font-size: 16px;
   line-height: 20px;
+  height: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,5 +66,38 @@
 
   .additional-goods-card__button {
     margin-left: 38px;
+    height: 40px;
+    min-width: 632px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods-card__button {
+    min-width: 244px;
+    max-width: 244px;
+    align-self: center;
+  }
+
+  .additional-goods-card__title {
+    margin-left: 0;
+  }
+
+  .additional-goods-card__characteristics-item {
+    position: absolute;
+    left: 325px;
+  }
+
+  .additional-goods-card__characteristics-value {
+    position: absolute;
+    left: 569px;
+  }
+
+  .additional-goods-card {
+    min-height: 72px;
+  }
+
+  .additional-goods-card__button {
+    position: absolute;
+    left: 613px;
   }
 }

@@ -132,3 +132,36 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+
+  .features {
+    margin-top: 71px;
+    margin-left: 110px;
+  }
+
+  .features__list {
+    column-gap: 0;
+    border-bottom: none;
+  }
+
+  .features__title {
+    margin-top: 0;
+  }
+
+  .features__list-item_convenient {
+    width: 246px;
+    margin-left: 94px;
+  }
+
+  .features__list-item_nourishing {
+    width: 248px;
+    margin-left: 94px;
+  }
+
+  .features__list-item_efficient {
+    width: 250px;
+    margin-left: 97px;
+    margin-bottom: 69px;
+  }
+}

@@ -54,6 +54,7 @@
 .product-card__button {
   margin-top: 13px;
   font-size: 16px;
+  height: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -114,6 +115,28 @@
 
   .product-card__button {
     width: 248px;
+    height: 40px;
     margin-top: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 245px;
+  }
+
+  .product-card__characteristics-row {
+    width: 166px;
+    margin-left: 46px;
+    margin-bottom: 7px;
+  }
+
+  .product-card__characteristics-item, .product-card__characteristics-value {
+    padding: 0;
+  }
+
+  .product-card__button {
+    margin-top: 25px;
+    width: 168px;
   }
 }

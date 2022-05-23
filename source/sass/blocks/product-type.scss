@@ -19,3 +19,20 @@
     height: 372px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-type {
+    margin-top: 70px;
+  }
+
+  .product-type__list {
+    flex-direction: row;
+    padding-left: 110px;
+    column-gap: 80px;
+    margin-bottom: 0;
+  }
+
+  .product-type__item {
+    width: 570px;
+  }
+}

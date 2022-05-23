@@ -48,6 +48,10 @@
     width: 171px;
   }
 
+  .footer-contacts_catalog {
+    background-color: $color-white;
+  }
+
   .footer-contacts__text {
     padding-left: 70px;
     height: 199px;
@@ -72,3 +76,32 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .footer-contacts__text {
+    position: absolute;
+    width: 565px;
+    background-color: $color-white;
+    padding-left: 0;
+    justify-content: normal;
+    top: 95px;
+    left: 110px;
+  }
+
+  .footer-contacts {
+    width: 1440px;
+  }
+
+  .footer-contacts__slogan {
+    padding-left: 80px;
+  }
+
+  .footer-contacts__address {
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  .footer-contacts__map {
+    background-image: url("/img/map-desktop.png");
+    width: 1440px;
+  }
+}

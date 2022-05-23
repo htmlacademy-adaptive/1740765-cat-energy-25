@@ -90,8 +90,19 @@
   .main-header {
     margin-top: 53px;
     min-height: 57px;
-    z-index: -1;
     background-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    background-image: url("/img/promo-block-img-desktop.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
   }
 
   .main-header__navigation-first-row {
@@ -100,10 +111,19 @@
 
   .main-header__navigation-list-item-link {
     font-size: 20px;
-
+    color: $color-white;
   }
 
   .main-header__navigation-list {
     margin-left: 538px;
   }
+
+  .main-header_catalog::after, .main-header_form::after {
+    content: none;
+  }
+
+  .main-header__navigation-list-item-link_black {
+    color: $color-black;
+  }
+
 }

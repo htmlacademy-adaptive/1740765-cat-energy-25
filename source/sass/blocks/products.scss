@@ -22,6 +22,8 @@
   margin-left: 20px;
   border-bottom: none;
   padding-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products__show-more-button {
@@ -61,6 +63,8 @@
   color: $color-grey-300;
   font-size: 16px;
   line-height: 20px;
+  height: 40px;
+  width: 280px;
 }
 
 @media (min-width: $tablet-width) {
@@ -111,7 +115,24 @@
 
   .products__show-more-link {
     width: 248px;
+    height: 40px;
     margin-top: 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list-item {
+    width: 245px;
+  }
+
+  .products__list {
+    margin-left: 110px;
+    column-gap: 80px;
+    row-gap: 144px;
+  }
+
+  .products__show-more-link {
+    width: 168px;
   }
 }
 

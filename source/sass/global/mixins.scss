@@ -143,6 +143,41 @@
   }
 }
 
+@mixin heading-with-line-desktop() {
+  font-family: "Oswald";
+  font-size: 36px;
+  color: $color-black;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  padding-right: 40px;
+  background-color: $color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: 4px;
+    width: 100vw;
+    height: 2px;
+    background: #68b738;
+    z-index: -1;
+  }
+
+  &::before  {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -110px;
+    margin-top: 4px;
+    width: 70px;
+    height: 2px;
+    background: #68b738;
+    z-index: -1;
+  }
+}
+
 @mixin index-regular-text-tablet() {
   font-family: "Oswald";
   font-size: 20px;

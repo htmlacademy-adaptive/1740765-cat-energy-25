@@ -56,3 +56,30 @@
     padding-top: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .additional-goods__heading {
+    @include heading-with-line-desktop();
+    margin-left: 110px;
+  }
+
+  .additional-goods {
+    margin-top: 80px;
+  }
+
+  .additional-goods__list {
+    width: 896px;
+    border-left: none;
+    border-right: none;
+    margin-left: 110px;
+    position: relative;
+    margin-top: 84px;
+    margin-bottom: 87px;
+  }
+
+  .additional-goods__list-item {
+    width: 896px;
+    height: 72px;
+    padding-bottom: 0;
+  }
+}
