@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.footer-made-by {
+.footer__made-by {
   display: flex;
   flex-direction: row;
   width: 280px;
@@ -27,11 +27,31 @@
   align-items: center;
 }
 
-.footer-made-by__link {
+.footer__made-by-link {
   text-decoration: none;
 }
 
-.footer-made-by__text {
+.footer__made-by-text {
   font-size: 16px;
   color: $color-grey-400;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+    height: 748px;
+  }
+
+  .footer__links {
+    height: 148px;
+    padding-top: 0;
+    flex-direction: row;
+    margin-left: 30px;
+  }
+
+  .footer__made-by {
+    width: 163px;
+    margin-left: auto;
+    margin-right: 30px;
+  }
 }

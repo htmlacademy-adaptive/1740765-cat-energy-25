@@ -25,3 +25,26 @@
   margin-top: 187px;
   margin-left: 58px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-additional-promo {
+    margin-top: 72px;
+    margin-left: 30px;
+    width: 708px;
+    height: 200px;
+    margin-bottom: 76px;
+    background-image: url(../../img/gift.svg), url(../../img/cat-carrier-tablet.png);
+    background-position-x: 77px, 0;
+  }
+
+  .catalog-additional-promo__link {
+    width: 708px;
+  }
+
+  .catalog-additional-promo__text {
+    margin-top: 71px;
+    margin-left: 422px;
+    text-align: left;
+  }
+
+}

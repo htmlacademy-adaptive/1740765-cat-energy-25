@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,28 +13,31 @@
     <nav class="main-header__navigation">
       <div class="main-header__navigation-first-row">
       <a class="main-header__navigation-logo">
-        <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" width="191" height="38"
-          alt="Лого Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
+          <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" alt="Лого Кэт энерджи">
+        </picture>
       </a>
       <button class="main-header__navigation-toggle burger-menu" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       </div>
-      <ul class="main-header__navigation-list visually-hidden">
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="#">
+      <ul class="main-header__navigation-list">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="#">
             Главная
           </a>
         </li>
 
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="catalog.html">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
 
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="#">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="#">
             Подбор программы
           </a>
         </li>
@@ -43,20 +47,21 @@
 
   <main class="inner">
     <section class="products">
-      <h1 class="inner__title">Каталог продукции</h1>
+      <h1 class="inner__title inner__title-catalog">Каталог продукции</h1>
       <ul class="products__list">
         <li class="products__list-item">
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/chicken-flavoured-500g.jpg" width="140" height="112"
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/chicken-flavoured-500g-big.png">
+                  <img class="product-card__image" src="/img/chicken-flavoured-500g.jpg"
                   alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                  PRO 500 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy PRO 500 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -81,14 +86,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/chicken-flavoured-1000g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/chicken-flavoured-1000g-big.png">
+                  <img class="product-card__image" src="/img/chicken-flavoured-1000g.jpg"
+                  alt="Упаковка корма со вкусом курицы, 1 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    PRO 1000 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy PRO 1000 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -113,14 +119,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/fish-flavoured-500g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/fish-flavoured-500g-big.png">
+                  <img class="product-card__image" src="/img/fish-flavoured-500g.jpg"
+                  alt="Упаковка корма со вкусом рыбы, 0.5 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    PRO 500 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy PRO 500 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -145,14 +152,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/fish-flavoured-1000g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/fish-flavoured-1000g-big.png">
+                  <img class="product-card__image" src="/img/fish-flavoured-1000g.jpg"
+                  alt="Упаковка корма со вкусом рыбы, 1 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    PRO 1000 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy PRO 1000 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -177,14 +185,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/buckwheat-flavoured-500g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/buckwheat-flavoured-500g-big.png">
+                  <img class="product-card__image" src="/img/buckwheat-flavoured-500g.jpg"
+                  alt="Упаковка корма со вкусом гречки, 0.5 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    SLIM 500 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy SLIM 500 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -209,14 +218,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/buckwheat-flavoured-1000g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/buckwheat-flavoured-1000g-big.png">
+                  <img class="product-card__image" src="/img/buckwheat-flavoured-1000g.jpg"
+                  alt="Упаковка корма со вкусом гречки, 1 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    SLIM 1000 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy SLIM 1000 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -241,14 +251,15 @@
           <article class="product-card">
             <div class="product-card__info">
               <a class="product-card__image-link" href="#">
-                <img class="product-card__image" src="/img/rice-flavoured-500g.jpg" width="140" height="112"
-                  alt="Упаковка корма со вкусом курицы, 0.5 кг">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="/img/rice-flavoured-500g-big.png">
+                  <img class="product-card__image" src="/img/rice-flavoured-500g.jpg"
+                  alt="Упаковка корма со вкусом риса, 0.5 кг">
+                </picture>
               </a>
               <div class="product-card__info-text-wrapper">
                 <h3 class="product-card__title">
-                  <a class="product-card__text-link" href="#">Cat Energy<br>
-                    SLIM 500 г
-                  </a>
+                  <a class="product-card__text-link" href="#">Cat Energy SLIM 500 г</a>
                 </h3>
                 <table class="product-card__characteristics">
                   <tr class="product-card__characteristics-row">
@@ -269,15 +280,17 @@
               <a class="product-card__button button" href="#">Заказать</a>
           </article>
         </li>
+        <li class="products__list-item">
+          <div class="products__show-more">
+            <button class="products__show-more-button" type="button"></button>
+            <p class="products__show-more-title">Показать еще 100500 товаров</p>
+            <p class="products__show-more-text">На самом деле вкусов гораздо больше!</p>
+            <a class="products__show-more-link button" href="#">Показать все</a>
+          </div>
+        </li>
       </ul>
-
-      <div class="products__show-more">
-        <button class="products__show-more-button" type="button"></button>
-        <p class="products__show-more-title">Показать еще 100500 товаров</p>
-        <p class="products__show-more-text">На самом деле вкусов гораздо больше!</p>
-        <a class="products__show-more-link button" href="#">Показать все</a>
-      </div>
     </section>
+
     <section class="additional-goods">
       <h2 class="additional-goods__heading inner__heading">Дополнительные товары</h2>
       <ul class="additional-goods__list">
@@ -393,11 +406,11 @@
           </a>
         </li>
       </ul>
-      <div class="footer-made-by">
-        <a class="footer-made-by__link" href="https://htmlacademy.ru">
-          <span class="footer-made-by__text">HTML Academy</span>
+      <div class="footer__made-by">
+        <a class="footer__made-by-link" href="https://htmlacademy.ru">
+          <span class="footer__made-by-text">HTML Academy</span>
         </a>
-        <img class="footer-made-by__image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
+        <img class="footer__made-by-image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
       </div>
       </div>
     </footer>

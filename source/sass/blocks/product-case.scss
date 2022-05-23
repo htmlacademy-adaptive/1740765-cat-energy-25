@@ -15,3 +15,32 @@
   width: 280px;
   margin: 40px 0 20px;
 }
+
+.product-case__desc br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .product-case {
+    background-color: $color-white;
+    position: relative
+  }
+
+  .product-case__title {
+    @include section-title-tablet();
+    padding-top: 43px;
+    padding-left: 30px;
+  }
+
+  .product-case__desc {
+    @include main-desc-tablet();
+    margin-top: 62px;
+    width: 708px;
+    padding-left: 30px;
+  }
+
+  .product-case__desc br {
+    display: block;
+  }
+}

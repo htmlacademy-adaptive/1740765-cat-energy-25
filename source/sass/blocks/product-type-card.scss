@@ -56,3 +56,45 @@
   background-repeat: no-repeat;
   background-position: 101px 21px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-type-card {
+  width: 708px;
+  height: 372px;
+  }
+
+  .product-type-card__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 77px;
+    padding-left: 53px;
+  }
+
+  .product-type-card__desc {
+    @include main-desc-tablet();
+    width: 340px;
+    padding-left: 52px;
+    padding-top: 24px;
+  }
+
+  .product-type-card_fit {
+    background-size: 200px 211px;
+    background-position-x: 446px;
+    background-position-y: 81px;
+  }
+
+  .product-type-card_gain {
+    background-size: 268px 200px;
+    background-position-x: 412px;
+    background-position-y: 91px;
+  }
+
+  .product-type-card__link {
+    font-size: 20px;
+    height: 30px;
+    border-top: none;
+    background-position: left 131px top 9px;
+    margin-left: 52px;
+    margin-top: 52px;
+  }
+}

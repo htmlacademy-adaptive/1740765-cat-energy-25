@@ -2,5 +2,28 @@
   @include form-regular-text();
   display: flex;
   align-items: center;
-  margin-right: auto
+  margin-right: auto;
+  position: relative;
+}
+
+.user-form-label_radio {
+  padding-left: 65px;
+}
+
+.user-form-label_checkbox {
+  padding-left: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-form-label {
+  @include form-regular-text-tablet();
+  }
+
+  .user-form-label_radio {
+   padding-left: 88px;
+  }
+
+  .user-form-label_checkbox {
+    padding-left: 59px;
+  }
 }

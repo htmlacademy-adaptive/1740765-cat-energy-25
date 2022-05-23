@@ -39,5 +39,59 @@
   gap: 13px;
   align-items: center;
   width: 210px;
-  margin: 15px auto 40px;
+  margin: 15px auto 0px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__title {
+    font-size: 20px;
+    line-height: 20px;
+    width: 174px;
+    text-align: right;
+    position: absolute;
+    left: 563px;
+    top: 303px;
+    line-height: 23px;
+  }
+
+  .slider {
+    background: linear-gradient(to top, #f2f2f2 42.7%, #ffffff 30%);
+
+  }
+
+  .slider__image {
+    background-image: url(/img/cat-tablet.png);
+    display: flex;
+    height: 511px;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    margin-left: 89px;
+  }
+
+  .slider__image-before {
+    display: none;
+  }
+
+  .slider__controls {
+    margin-top: 29px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 592px;
+    padding-bottom: 56px;
+  }
+
+  .slider__button {
+    font-size: 20px;
+  }
+
+  .slider__button-text {
+    border-bottom: 1px dotted $color-grey-225;
+  }
+
+  .slider__range {
+    width: 426px;
+    gap: 24px;
+  }
 }

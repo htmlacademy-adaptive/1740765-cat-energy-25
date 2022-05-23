@@ -41,3 +41,34 @@
   background-color: $color-grey-50;
 }
 
+@media (min-width: $tablet-width) {
+  .footer-contacts__slogan {
+    font-size: 20px;
+    line-height: 26px;
+    width: 171px;
+  }
+
+  .footer-contacts__text {
+    padding-left: 70px;
+    height: 199px;
+    justify-content: space-between;
+    width: 630px;
+  }
+
+  .footer-contacts__address {
+    white-space: pre-line;
+    width: 164px;
+    text-align: right;
+    margin-left: auto;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  .footer-contacts__map {
+    width: 768px;
+    height: 400px;
+    background-image: url(../../img/map-tablet.png);
+    background-repeat: no-repeat;
+  }
+}
+

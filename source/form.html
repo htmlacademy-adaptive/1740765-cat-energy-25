@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Подбор программы питания</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,28 +13,31 @@
     <nav class="main-header__navigation">
       <div class="main-header__navigation-first-row">
       <a class="main-header__navigation-logo">
-        <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" width="191" height="38"
-          alt="Лого Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
+          <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" alt="Лого Кэт энерджи">
+        </picture>
       </a>
       <button class="main-header__navigation-toggle burger-menu" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       </div>
-      <ul class="main-header__navigation-list visually-hidden">
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="#">
+      <ul class="main-header__navigation-list">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="#">
             Главная
           </a>
         </li>
 
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="catalog.html">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="catalog.html">
             Каталог продукции
           </a>
         </li>
 
-        <li class="main-header__navigation-item">
-          <a class="main-header__navigation-item-link" href="#">
+        <li class="main-header__navigation-list-item">
+          <a class="main-header__navigation-list-item-link" href="#">
             Подбор программы
           </a>
         </li>
@@ -73,19 +77,19 @@
         <legend class="visually-hidden">Выбор программы</legend>
         <ul class="user-form__radio">
           <li class="user-form__radio-item">
-            <label class="user-form-label">Похудение
+            <label class="user-form-label user-form-label_radio">Похудение
               <input class="user-form__radio-button" type="radio" name="program" value="losing-weight" checked>
               <span class="user-form__radio-checkmark"></span>
             </label>
           </li>
           <li class="user-form__radio-item">
-            <label class="user-form-label">Набор массы
+            <label class="user-form-label user-form-label_radio">Набор массы
               <input class="user-form__radio-button" type="radio" name="program" value="weight-gain">
               <span class="user-form__radio-checkmark"></span>
             </label>
           </li>
           <li class="user-form__radio-item">
-            <label class="user-form-label">Не знаю (Нужен ваш совет)
+            <label class="user-form-label user-form-label_radio">Не знаю (Нужен ваш совет)
               <input class="user-form__radio-button" type="radio" name="program" value="unknown-goal">
               <span class="user-form__radio-checkmark"></span>
             </label>
@@ -94,7 +98,7 @@
       </fieldset>
 
       <fieldset class="user-form__fieldset user-form__contact-info">
-        <legend class="user-form__heading inner__heading">Контактные данные (владельца кота)</legend>
+        <legend class="user-form__heading user-form__two-line-heading">Контактные данные (владельца кота)</legend>
         <ul class="user-form__contacts">
           <li class="user-form__contacts-item">
             <label class="user-form-label" for="email">
@@ -123,36 +127,37 @@
         <legend class="user-form__heading inner__heading">Дополнительно</legend>
         <ul class="user-form__checkbox-list">
           <li class="user-form__checkbox-item">
-            <label class="user-form-label">Сахарозаменитель
+            <label class="user-form-label user-form-label_checkbox">Сахарозаменитель
               <input class="user-form__checkbox" type="checkbox" name="sweetener" checked>
               <span class="user-form__checkbox-checkmark"></span>
             </label>
           </li>
           <li class="user-form__checkbox-item">
-            <label class="user-form-label">Питьевая вода
+            <label class="user-form-label user-form-label_checkbox">Питьевая вода
               <input class="user-form__checkbox" type="checkbox" name="water">
               <span class="user-form__checkbox-checkmark"></span>
             </label>
           </li>
           <li class="user-form__checkbox-item">
-            <label class="user-form-label">Молоко
+            <label class="user-form-label user-form-label_checkbox">Молоко
               <input class="user-form__checkbox" type="checkbox" name="milk">
               <span class="user-form__checkbox-checkmark"></span>
             </label>
           </li>
           <li class="user-form__checkbox-item">
-            <label class="user-form-label">Витамины
+            <label class="user-form-label user-form-label_checkbox">Витамины
               <input class="user-form__checkbox" type="checkbox" name="vitamins">
               <span class="user-form__checkbox-checkmark"></span>
             </label>
           </li>
         </ul>
       </fieldset>
-
-      <button class="user-form__button button" type="submit">
-        Отправить заявку
-      </button>
-      <span class="user-form__footnote">* &#8212; Обязательные поля</span>
+      <div class="user-form__wrapper">
+        <button class="user-form__button button" type="submit">
+          Отправить заявку
+        </button>
+        <span class="user-form__footnote">* &#8212; Обязательные поля</span>
+      </div>
     </form>
 
     <footer class="footer">
@@ -198,11 +203,11 @@
           </a>
         </li>
       </ul>
-      <div class="footer-made-by">
-        <a class="footer-made-by__link" href="https://htmlacademy.ru">
-          <span class="footer-made-by__text">HTML Academy</span>
+      <div class="footer__made-by">
+        <a class="footer__made-by-link" href="https://htmlacademy.ru">
+          <span class="footer__made-by-text">HTML Academy</span>
         </a>
-        <img class="footer-made-by__image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
+        <img class="footer__made-by-image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
       </div>
       </div>
     </footer>
