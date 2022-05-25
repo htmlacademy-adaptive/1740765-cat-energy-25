@@ -9,6 +9,10 @@
   margin-bottom: 40px;
 }
 
+.slider__title-number {
+  margin-left: 5px;
+}
+
 .slider__image-before {
   padding-left: 20px;
 }
@@ -33,11 +37,110 @@
   margin: 0;
 }
 
+.slider__range::-webkit-slider-thumb {
+  appearance: none;
+}
+
 .slider__controls {
   display: flex;
   flex-direction: row;
   gap: 13px;
   align-items: center;
   width: 210px;
-  margin: 15px auto 40px;
+  margin: 15px auto 0px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__title {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+    position: absolute;
+    left: 563px;
+    top: 278px;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider__title-number {
+    margin-top: 4px;
+  }
+
+  .slider {
+    background: linear-gradient(to top, #f2f2f2 73%, #ffffff 30%);
+
+  }
+
+  .slider__image {
+    background-image: url(/img/cat-tablet.png);
+    display: flex;
+    height: 511px;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    margin-left: 89px;
+  }
+
+  .slider__image-before {
+    display: none;
+  }
+
+  .slider__controls {
+    margin-top: 29px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 592px;
+    padding-bottom: 56px;
+  }
+
+  .slider__button {
+    font-size: 20px;
+  }
+
+  .slider__button-text {
+    border-bottom: 1px dotted $color-grey-225;
+  }
+
+  .slider__range {
+    width: 426px;
+    gap: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__title {
+    font-size: 20px;
+    width: 174px;
+    text-align: right;
+    position: absolute;
+    left: 110px;
+    top: 484px;
+    line-height: 23px;
+    flex-direction: row;
+    min-width: 327px;
+    text-align: center;
+  }
+
+  .slider__title-number {
+    margin-top: 0;
+    margin-left: 63px;
+  }
+
+  .slider__image {
+    position: absolute;
+    top: -120px;
+    left: 650px;
+    width: 592px;
+  }
+
+  .slider__controls {
+    margin-left: 740px;
+    margin-top: 45px;
+  }
+
+  .slider {
+    background: none;
+  }
 }

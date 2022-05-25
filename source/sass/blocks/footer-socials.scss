@@ -36,3 +36,19 @@
   background-image: url(../../img/telegram.svg);
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-socials {
+    margin-top: 0;
+    margin-left: 154px;
+    border: none;
+    align-self: center;
+    width: 132px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-socials {
+    margin-left: 413px;
+  }
+}

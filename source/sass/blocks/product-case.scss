@@ -15,3 +15,54 @@
   width: 280px;
   margin: 40px 0 20px;
 }
+
+.product-case__desc br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .product-case {
+    background-color: $color-white;
+    position: relative
+  }
+
+  .product-case__title {
+    @include section-title-tablet();
+    padding-top: 43px;
+    padding-left: 30px;
+  }
+
+  .product-case__desc {
+    @include main-desc-tablet();
+    margin-top: 62px;
+    width: 708px;
+    padding-left: 30px;
+  }
+
+  .product-case__desc br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-case__title {
+    padding-top: 0;
+    padding-left: 110px;
+  }
+
+  .product-case__desc {
+    width: 436px;
+    margin-top: 146px;
+    padding-left: 110px;
+  }
+
+  .product-case__desc br {
+    display: none;
+  }
+
+  .product-case {
+    background: linear-gradient(to top, #f2f2f2 77%, #ffffff 30%);
+    min-height: 598px;
+  }
+}

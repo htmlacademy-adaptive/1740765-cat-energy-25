@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Магазин Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -12,14 +13,17 @@
     <nav class="main-header__navigation">
       <div class="main-header__navigation-first-row">
       <a class="main-header__navigation-logo">
-        <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" width="191" height="38"
-          alt="Лого Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
+          <img class="main-header__navigation-logo-image" src="/img/main-logo.svg" alt="Лого Кэт энерджи">
+        </picture>
       </a>
       <button class="main-header__navigation-toggle burger-menu" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       </div>
-      <ul class="main-header__navigation-list visually-hidden">
+      <ul class="main-header__navigation-list">
         <li class="main-header__navigation-list-item">
           <a class="main-header__navigation-list-item-link" href="#">
             Главная
@@ -47,7 +51,12 @@
       <h2 class="promo-block__title">Функциональное
         питание для котов</h2>
       <p class="promo-block__desc">Занялся собой? Займись котом!</p>
-      <a class="button promo-block__button" href="#">Подобрать программу</a>
+      <a class="promo-block__button button" href="#">Подобрать программу</a>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/promo-block-food-desktop.png">
+        <source media="(min-width: 768px)" srcset="img/promo-block-food-tablet.png">
+        <img class="promo-block__image" src="img/promo-block-food.png" alt="Корм Кэт энерджи">
+      </picture>
     </section>
 
     <section class="product-type">
@@ -89,16 +98,28 @@
       <h2 class="features__title">Как это работает</h2>
       <ol class="features__list">
         <li class="features__list-item features__list-item_healthy">
-          Функциональное питание содержит только полезные питательные вещества.
+          <p class="features__list-item-text">
+            Функциональное питание содержит только полезные питательные вещества.
+          </p>
+          <span class="features__list-item-number">1</span>
         </li>
         <li class="features__list-item features__list-item_convenient">
-          Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          <p class="features__list-item-text">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </p>
+          <span class="features__list-item-number">2</span>
         </li>
         <li class="features__list-item features__list-item_nourishing">
-          Замените один-два приема обычной еды на наше функциональное питание.
+          <p class="features__list-item-text">
+            Замените один-два приема обычной еды на наше функциональное питание.
+          </p>
+          <span class="features__list-item-number">3</span>
         </li>
         <li class="features__list-item features__list-item_efficient">
-          Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <p class="features__list-item-text">
+            Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!
+          </p>
+          <span class="features__list-item-number">4</span>
         </li>
       </ol>
     </section>
@@ -109,7 +130,7 @@
       </h2>
       <p class="product-case__desc main-desc">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        изнуряющих тренировок! При этом он не менял своих привычек и<br> по-прежнему спит по 16 часов в день.
       </p>
       <dl class="product-metrics">
         <div class="product-metrics__item">
@@ -123,9 +144,10 @@
       </dl>
 
       <div class="slider">
-        <span class="slider__title">
-          Затраты на питание: 15 000 РУБ.
-        </span>
+        <p class="slider__title">
+          Затраты на питание:
+          <span class="slider__title-number">15 000 РУБ.</span>
+        </p>
         <div class="slider__image">
           <img class="slider__image-before" src="/img/chonky-cat.jpg" width="280" height="232"
             alt="Кот до перехода на корм Cat Energy Slim">
@@ -145,7 +167,7 @@
     </section>
 
     <footer class="footer">
-      <section class="footer-contacts">
+      <section class="footer-contacts footer-contacts_inner footer-contacts_catalog">
         <div class="footer-contacts__text">
           <h2 class="visually-hidden">
             Контакты
@@ -187,11 +209,11 @@
           </a>
         </li>
       </ul>
-      <div class="footer-made-by">
-        <a class="footer-made-by__link" href="https://htmlacademy.ru">
-          <span class="footer-made-by__text">HTML Academy</span>
+      <div class="footer__made-by">
+        <a class="footer__made-by-link" href="https://htmlacademy.ru">
+          <span class="footer__made-by-text">HTML Academy</span>
         </a>
-        <img class="footer-made-by__image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
+        <img class="footer__made-by-image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
       </div>
       </div>
     </footer>

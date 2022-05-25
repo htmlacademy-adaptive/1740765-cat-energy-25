@@ -25,3 +25,44 @@
   margin-top: 187px;
   margin-left: 58px;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-additional-promo {
+    margin-top: 72px;
+    margin-left: 30px;
+    width: 708px;
+    height: 200px;
+    margin-bottom: 76px;
+    background-image: url(../../img/gift.svg), url(../../img/cat-carrier-tablet.png);
+    background-position-x: 77px, 0;
+  }
+
+  .catalog-additional-promo__link {
+    width: 708px;
+  }
+
+  .catalog-additional-promo__text {
+    margin-top: 71px;
+    margin-left: 422px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additional-promo {
+    position: absolute;
+    width: 245px;
+    height: 289px;
+    top: 1609px;
+    left: 1085px;
+    margin: 0;
+    background-image: url(../../img/gift.svg), url(../../img/cat-carrier-desktop.png);
+    background-position: 84px 56px, 0px 0px;
+  }
+
+  .catalog-additional-promo__text {
+    margin-left: 41px;
+    margin-top: 185px;
+    text-align: center;
+  }
+}

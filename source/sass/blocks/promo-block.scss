@@ -1,11 +1,18 @@
 .promo-block {
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: center;
   min-height: 480px;
-  background-image: url("/img/promo-block-food.png"), url("/img/promo-block-bg.png");
-  background-position: center 167px, top;
+  background-image: url("/img/promo-block-bg.png");
+  background-position: top;
   background-repeat: no-repeat, no-repeat;
+}
+
+.promo-block__image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
 }
 
 .promo-block__title {
@@ -28,5 +35,76 @@
 
 .promo-block__button {
   margin-top: auto;
+  padding: 10px 74px;
 }
 
+@media (min-width: $tablet-width) {
+  .promo-block {
+    margin-top: 62px;
+    height: 810px;
+    background-image: none
+  }
+
+  .promo-block__title {
+    @include section-title-tablet();
+    color: $color-black;
+    padding-top: 0;
+    text-align: left;
+    margin-left: 117px;
+    width: 416px;
+    align-self: start;
+  }
+
+  .promo-block__image {
+    top: 201px;
+    left: 29px;
+  }
+
+  .promo-block__desc {
+    @include index-regular-text-tablet();
+    color: $color-black;
+    margin-top: 41px;
+    align-self: start;
+    margin-left: 117px;
+  }
+
+  .promo-block__button {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 27px;
+    max-width: 244px;
+    max-height: 54px;
+    margin-top: 19px;
+    align-self: start;
+    margin-left: 120px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo-block {
+    margin-top: 111px;
+    max-height: 471px;
+    background-image: none;
+    position: relative;
+  }
+
+  .promo-block__title {
+    margin-left: 190px;
+  }
+
+  .promo-block__desc {
+    margin-left: 190px;
+    margin-top: 40px;
+  }
+
+  .promo-block__button {
+    margin-left: 190px;
+  }
+
+  .promo-block__image {
+    position: absolute;
+    left: 558px;
+    top: -84px;
+  }
+}

@@ -8,3 +8,9 @@
   background-image: url(../../img/burger-menu.svg);
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .burger-menu {
+    display: none;
+  }
+}
