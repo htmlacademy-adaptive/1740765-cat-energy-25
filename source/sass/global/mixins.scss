@@ -1,5 +1,5 @@
 @mixin header-nav-link() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -8,7 +8,7 @@
 }
 
 @mixin section-title() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -16,7 +16,7 @@
 }
 
 @mixin section-title-tablet() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 400;
@@ -37,7 +37,7 @@
 }
 
 @mixin main-title() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -46,14 +46,14 @@
 }
 
 @mixin form-regular-text() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: $color-grey-300;
 }
 
 @mixin form-regular-text-tablet() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 20px;
   line-height: normal;
   text-transform: uppercase;
@@ -61,14 +61,14 @@
 }
 
 @mixin form-heading() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: $color-black;
 }
 
 @mixin catalog-regular-text() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -77,7 +77,7 @@
 }
 
 @mixin catalog-regular-text-tablet() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -86,7 +86,7 @@
 }
 
 @mixin heading-with-line() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   color: $color-black;
   display: inline-block;
@@ -109,7 +109,7 @@
 }
 
 @mixin heading-with-line-tablet() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 36px;
   color: $color-black;
   display: inline-block;
@@ -144,7 +144,7 @@
 }
 
 @mixin heading-with-line-desktop() {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 36px;
   color: $color-black;
   display: inline-block;
@@ -179,7 +179,7 @@
 }
 
 @mixin index-regular-text-tablet() {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: 400;
