@@ -4,7 +4,6 @@
   height: 290px;
   margin-top: 37px;
   margin-bottom: 35px;
-  margin-left: 20px;
   background-image: url(../../img/gift.svg), url(../../img/cat-carrier.png);
   background-repeat: no-repeat;
   background-position-y: 59px, 0;
@@ -61,11 +60,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog-additional-promo {
-    position: absolute;
     width: 245px;
     height: 289px;
-    top: 1609px;
-    left: 1085px;
     margin: 0;
     background-image: url(../../img/gift.svg), url(../../img/cat-carrier-desktop.png);
     background-position: 84px 56px, 0px 0px;
