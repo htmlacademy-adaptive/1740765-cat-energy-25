@@ -12,7 +12,7 @@
   <header class="main-header main-header_form">
     <nav class="main-header__navigation">
       <div class="main-header__navigation-first-row">
-      <a class="main-header__navigation-logo">
+      <a class="main-header__navigation-logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
@@ -25,7 +25,7 @@
       </div>
       <ul class="main-header__navigation-list">
         <li class="main-header__navigation-list-item">
-          <a class="main-header__navigation-list-item-link main-header__navigation-list-item-link_black" href="#">
+          <a class="main-header__navigation-list-item-link main-header__navigation-list-item-link_black" href="index.html">
             Главная
           </a>
         </li>
@@ -37,7 +37,7 @@
         </li>
 
         <li class="main-header__navigation-list-item">
-          <a class="main-header__navigation-list-item-link main-header__navigation-list-item-link_black" href="#">
+          <a class="main-header__navigation-list-item-link main-header__navigation-list-item-link_black" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -47,7 +47,7 @@
 
   <main class="inner">
     <form class="user-form" action="https://echo.htmlacademy.ru/" method="post">
-      <h1 class="inner__title">Подбор программы</h1>
+      <h1 class="inner__title inner__title_form">Подбор программы</h1>
       <p class="inner__desc">Заполните анкету, и мы подберем<br>
         программу питания для вашего кота</p>
       <fieldset class="user-form__fieldset user-form__parameters">
@@ -171,11 +171,12 @@
             к сотрудничеству дилеров!
           </p>
           <address class="footer-contacts__address">
-            ул. Большая Конюшенная, д. 19/8 <br>
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span class="footer-contacts__address-city">
+            Санкт-Петербург </span>
           </address>
         </div>
         <div class="footer-contacts__map">
+          <iframe class="footer-contacts__map-embeded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.60378725332!2d30.320858715877446!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1653673483010!5m2!1sen!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="footer-contacts__map-pin"></div>
         </div>
       </section>
@@ -204,10 +205,12 @@
         </li>
       </ul>
       <div class="footer__made-by">
-        <a class="footer__made-by-link" href="https://htmlacademy.ru">
+        <a class="footer__made-by-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="footer__made-by-text">HTML Academy</span>
         </a>
-        <img class="footer__made-by-image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
+        <a class="footer__made-by-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="footer__made-by-image" src="img/html-academy.svg" alt="Лого HTML Academy" width="27" height="34">
+        </a>
       </div>
       </div>
     </footer>

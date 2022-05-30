@@ -5,7 +5,7 @@
 }
 
 .inner__desc {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -48,20 +48,29 @@
     margin-left: 70px;
   }
 
-  .inner__title-catalog {
+  .inner__title_catalog {
     padding-left: 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .inner__title {
-    margin-top: 74px;
-    padding-left: 110px;
+    margin-top: 64px;
+    padding-left: 30px;
+  }
+
+  .inner__title_form {
+    padding-left: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .inner__desc {
+    padding-left: 110px;
+  }
+
+  .inner__title {
+    margin-top: 74px;
     padding-left: 110px;
   }
 

@@ -10,7 +10,7 @@
 }
 
 .additional-goods-card__characteristics {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   margin-top: 9px;
 }
 
@@ -30,13 +30,13 @@
     line-height: 20px;
     margin-left: 38px;
     margin-top: 26px;
+    width: 163px;
   }
 
   .additional-goods-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-right: 38px;
     position: relative;
   }
 
@@ -50,18 +50,22 @@
   }
 
   .additional-goods-card__characteristics-item {
-    margin-right: 92px;
+    width: 132px;
+    text-align: right;
   }
 
   .additional-goods-card__characteristics-value {
-    position: absolute;
-    right: 38px;
+    margin-left: 49px;
+  }
+
+  .additional-goods-card__characteristics-value_two-digits {
+    margin-left: 55px;
   }
 
   .additional-goods-card__characteristics {
-    margin-top: 30px;
-    margin-left: auto;
-    margin-bottom: 23px;
+    margin-top: 28px;
+    margin-left: 244px;
+    margin-bottom: 24px;
   }
 
   .additional-goods-card__button {
@@ -82,14 +86,19 @@
     margin-left: 0;
   }
 
+  .additional-goods-card__characteristics {
+    margin-left: 163px;
+  }
+
   .additional-goods-card__characteristics-item {
-    position: absolute;
-    left: 325px;
+    width: 132px;
+    text-align: left;
   }
 
   .additional-goods-card__characteristics-value {
-    position: absolute;
-    left: 569px;
+    width: 44px;
+    margin-left: 112px;
+    text-align: left;
   }
 
   .additional-goods-card {
@@ -97,7 +106,7 @@
   }
 
   .additional-goods-card__button {
-    position: absolute;
-    left: 613px;
+    margin-top: -3px;
   }
+
 }

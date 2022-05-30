@@ -27,6 +27,15 @@
   display: none;
 }
 
+.main-header__navigation_active .main-header__navigation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__navigation_active .burger-menu {
+  display: none;
+}
+
 .main-header__navigation {
   display: flex;
   flex-direction: column;
@@ -60,6 +69,10 @@
     flex-direction: row;
     gap: 35px;
     margin-left: 94px;
+  }
+
+  .main-header__navigation_active .main-header__navigation-list {
+    flex-direction: row;
   }
 
   .main-header__navigation-list-item {
@@ -102,7 +115,16 @@
     background-image: url("/img/promo-block-img-desktop.png");
     background-repeat: no-repeat;
     z-index: -1;
+    background-color: $color-primary;
+    }
   }
+
+@media (min-resolution: 2dppx) {
+    .main-header::after {
+    background-image: url("/../img/promo-block-bg-desktop@2x.png");
+    background-size: 720px auto;
+    background-repeat: no-repeat;
+    }
   }
 
   .main-header__navigation-first-row {
