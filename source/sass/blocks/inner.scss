@@ -5,7 +5,7 @@
 }
 
 .inner__desc {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
     margin-left: 70px;
   }
 
-  .inner__title-catalog {
+  .inner__title_catalog {
     padding-left: 30px;
   }
 }
@@ -57,6 +57,10 @@
   .inner__title {
     margin-top: 64px;
     padding-left: 30px;
+  }
+
+  .inner__title_form {
+    padding-left: 70px;
   }
 }
 

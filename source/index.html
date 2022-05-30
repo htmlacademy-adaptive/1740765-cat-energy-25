@@ -12,7 +12,7 @@
   <header class="main-header">
     <nav class="main-header__navigation main-header__navigation_active">
       <div class="main-header__navigation-first-row">
-      <a class="main-header__navigation-logo">
+      <a class="main-header__navigation-logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/main-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/main-logo-tablet.svg">
@@ -25,7 +25,7 @@
       </div>
       <ul class="main-header__navigation-list">
         <li class="main-header__navigation-list-item">
-          <a class="main-header__navigation-list-item-link" href="#">
+          <a class="main-header__navigation-list-item-link" href="index.html">
             Главная
           </a>
         </li>
@@ -37,7 +37,7 @@
         </li>
 
         <li class="main-header__navigation-list-item">
-          <a class="main-header__navigation-list-item-link" href="#">
+          <a class="main-header__navigation-list-item-link" href="form.html">
             Подбор программы
           </a>
         </li>
@@ -53,9 +53,9 @@
       <p class="promo-block__desc">Занялся собой? Займись котом!</p>
       <a class="promo-block__button button" href="form.html">Подобрать программу</a>
       <picture>
-        <source media="(min-width: 1440px)" srcset="img/promo-block-food-desktop.png">
-        <source media="(min-width: 768px)" srcset="img/promo-block-food-tablet.png">
-        <img class="promo-block__image" src="img/promo-block-food.png" alt="Корм Кэт энерджи">
+        <source media="(min-width: 1440px)" srcset="img/promo-block-food-desktop.png 1x, img/promo-block-food-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/promo-block-food-tablet.png 1x, img/promo-block-food-tablet@2x.png 2x">
+        <img class="promo-block__image" src="img/promo-block-food.png" srcset="img/promo-block-food@2x.png 2x" alt="Корм Кэт энерджи">
       </picture>
     </section>
 
@@ -153,10 +153,16 @@
 
       <div class="slider">
         <div class="slider__image">
-          <img class="slider__image-before" src="/img/chonky-cat.jpg" width="280" height="232"
-            alt="Кот до перехода на корм Cat Energy Slim">
-          <img class="slider__image-after visually-hidden" src="/img/skinny-cat.jpg" width="243" height="232"
-            alt="Кот после перехода на корм Cat Energy Slim">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/chonky-cat-big.png 1x, img/chonky-cat-big@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/chonky-cat-big.png 1x, img/chonky-cat-big@2x.png 2x"">
+            <img class="slider__image-before" src="/img/chonky-cat.png" srcset="/img/chonky-cat@2x.png" alt="Кот до перехода на корм Cat Energy Slim">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/skinny-cat-big.png 1x, img/skinny-cat-big@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/skinny-cat-big.png 1x, img/skinny-cat-big@2x.png 2x"">
+          <img class="slider__image-after" src="/img/skinny-cat.png" scrset="/img/skinny-cat@2x.png" alt="Кот после перехода на корм Cat Energy Slim">
+          </picture>
         </div>
         <div class="slider__controls">
           <button class="slider__button" type="button">
@@ -173,7 +179,7 @@
     </section>
 
     <footer class="footer">
-      <section class="footer-contacts footer-contacts_inner footer-contacts_catalog">
+      <section class="footer-contacts footer-contacts_catalog">
         <div class="footer-contacts__text">
           <h2 class="visually-hidden">
             Контакты
@@ -183,8 +189,8 @@
             к сотрудничеству дилеров!
           </p>
           <address class="footer-contacts__address">
-            ул. Большая Конюшенная, д. 19/8 <br>
-            Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 <span class="footer-contacts__address-city">
+            Санкт-Петербург </span>
           </address>
         </div>
         <div class="footer-contacts__map">

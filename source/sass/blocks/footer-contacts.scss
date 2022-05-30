@@ -14,7 +14,7 @@
 }
 
 .footer-contacts__slogan {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -37,7 +37,7 @@
 
 .footer-contacts__map-embeded {
   height: 362px;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer-contacts_inner {
@@ -69,6 +69,12 @@
     margin-left: auto;
     margin-bottom: 24px;
     font-size: 16px;
+    margin-top: 14px;
+  }
+
+  .footer-contacts__address-city {
+    margin-top: 18px;
+    display: block;
   }
 
   .footer-contacts__map {

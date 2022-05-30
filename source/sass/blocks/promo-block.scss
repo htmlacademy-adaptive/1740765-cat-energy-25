@@ -4,9 +4,14 @@
   position: relative;
   align-items: center;
   min-height: 480px;
-  background-image: url("/img/promo-block-bg.png");
+  background-image: url("/../img/promo-block-bg.png");
   background-position: top;
   background-repeat: no-repeat, no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/../img/promo-block-bg@2x.png");
+    background-size: 320px auto;
+  }
 }
 
 .promo-block__image {
@@ -23,7 +28,7 @@
 }
 
 .promo-block__desc {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -42,7 +47,7 @@
   .promo-block {
     margin-top: 62px;
     height: 810px;
-    background-image: none
+    background-image: none;
   }
 
   .promo-block__title {
@@ -58,6 +63,7 @@
   .promo-block__image {
     top: 201px;
     left: 29px;
+    background-color: $color-white;
   }
 
   .promo-block__desc {
@@ -106,5 +112,6 @@
     position: absolute;
     left: 558px;
     top: -84px;
+    background-color: transparent;
   }
 }
