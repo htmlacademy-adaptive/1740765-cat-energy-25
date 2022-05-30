@@ -71,15 +71,24 @@
     width: 896px;
     border-left: none;
     border-right: none;
-    margin-left: 110px;
     position: relative;
-    margin-top: 84px;
-    margin-bottom: 87px;
+    margin-left: 0;
+    margin-top: 0;
   }
 
   .additional-goods__list-item {
     width: 896px;
     height: 72px;
     padding-bottom: 0;
+  }
+
+  .additional-goods__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 84px;
+    margin-bottom: 87px;
+    margin-left: 110px;
+    margin-right: 110px;
   }
 }
